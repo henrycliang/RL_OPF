@@ -1,6 +1,6 @@
 # RL_OPF
 
-This is the project report of 2021 fall course [CUHK IERG5350](https://cuhkrlcourse.github.io/) 
+This is the project report of 2021 fall course [CUHK IERG5350](https://cuhkrlcourse.github.io/).
 
 The interaction of our agent with the power environment is showed as:
 ![](intersaction.png =100x100)
