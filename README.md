@@ -3,8 +3,7 @@
 This is the project report of 2021 fall course [CUHK IERG5350](https://cuhkrlcourse.github.io/).
 
 The interaction of our agent with the power environment is showed as:
-![](intersaction.png){:height="50%" width="50%"}
-
+<img width="300"  src=intersaction.png>
 
 The learning curve of TD3 algorithm and the cost function during training:
 ![](TD3_training_reward.png =100x100)
