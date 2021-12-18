@@ -1,0 +1,123 @@
+Clear
+
+New object=circuit.ieee37
+~ basekv=4.80 pu=1.05 phases=1 MVAsc3=200000 MVAsc1=210000
+! ~ basekv=4.80 pu=1.00 phases=1 r1=0  x1=0.001  r0=0  x0=0.001
+
+! import line codes with phase impedance matrices
+Redirect        IEEELineCodes.dss
+
+! Lines
+New Line.L1     Phases=1 Bus1=701  Bus2=702  LineCode=722s  Length=14.399999999999999
+New Line.L2     Phases=1 Bus1=702  Bus2=705  LineCode=724s  Length=6.0
+New Line.L3     Phases=1 Bus1=702  Bus2=713  LineCode=723s  Length=5.4
+New Line.L4     Phases=1 Bus1=702  Bus2=703  LineCode=722s  Length=19.8
+New Line.L5     Phases=1 Bus1=703  Bus2=727  LineCode=724s  Length=3.5999999999999996
+New Line.L6     Phases=1 Bus1=703  Bus2=730  LineCode=723s  Length=0.6
+New Line.L7     Phases=1 Bus1=704  Bus2=714  LineCode=724s  Length=1.2
+New Line.L8     Phases=1 Bus1=704  Bus2=720  LineCode=723s  Length=12.0
+New Line.L9     Phases=1 Bus1=705  Bus2=742  LineCode=724s  Length=4.8
+New Line.L10    Phases=1 Bus1=705  Bus2=712  LineCode=724s  Length=3.5999999999999996
+New Line.L11    Phases=1 Bus1=706  Bus2=725  LineCode=724s  Length=4.2
+New Line.L12    Phases=1 Bus1=707  Bus2=724  LineCode=724s  Length=2.399999999999999
+New Line.L13    Phases=1 Bus1=707  Bus2=722  LineCode=724s  Length=1.7999999999999998
+New Line.L14    Phases=1 Bus1=708  Bus2=733  LineCode=723s  Length=4.8
+New Line.L15    Phases=1 Bus1=708  Bus2=732  LineCode=724s  Length=4.8
+New Line.L16    Phases=1 Bus1=709  Bus2=731  LineCode=723s  Length=9.0
+New Line.L17    Phases=1 Bus1=709  Bus2=708  LineCode=723s  Length=4.8
+New Line.L18    Phases=1 Bus1=710  Bus2=735  LineCode=724s  Length=3.0
+New Line.L19    Phases=1 Bus1=710  Bus2=736  LineCode=724s  Length=17.4
+New Line.L20    Phases=1 Bus1=711  Bus2=741  LineCode=723s  Length=6.0
+New Line.L21    Phases=1 Bus1=711  Bus2=740  LineCode=724s  Length=3.0
+New Line.L22    Phases=1 Bus1=713  Bus2=704  LineCode=723s  Length=7.800000000000001
+New Line.L23    Phases=1 Bus1=714  Bus2=718  LineCode=724s  Length=7.800000000000001
+New Line.L24    Phases=1 Bus1=720  Bus2=707  LineCode=724s  Length=13.799999999999999
+New Line.L25    Phases=1 Bus1=720  Bus2=706  LineCode=723s  Length=9.0
+New Line.L26    Phases=1 Bus1=727  Bus2=744  LineCode=723s  Length=4.2
+New Line.L27    Phases=1 Bus1=730  Bus2=709  LineCode=723s  Length=3.0
+New Line.L28    Phases=1 Bus1=733  Bus2=734  LineCode=723s  Length=8.4
+New Line.L29    Phases=1 Bus1=734  Bus2=737  LineCode=723s  Length=9.6
+New Line.L30    Phases=1 Bus1=734  Bus2=710  LineCode=724s  Length=7.800000000000001
+New Line.L31    Phases=1 Bus1=737  Bus2=738  LineCode=723s  Length=6.0
+New Line.L32    Phases=1 Bus1=738  Bus2=711  LineCode=723s  Length=6.0
+New Line.L33    Phases=1 Bus1=744  Bus2=728  LineCode=724s  Length=3.0
+New Line.L34    Phases=1 Bus1=744  Bus2=729  LineCode=724s  Length=4.2
+New Line.L35    Phases=1 Bus1=sourcebus Bus2=701  LineCode=721s  Length=5.75
+
+! spot loads (modified)
+! New Load.S701a      Bus1=701.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 140.0 kVAR=  70.0
+! New Load.S701b      Bus1=701.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 140.0 kVAR=  70.0
+! New Load.S701c      Bus1=701.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 350.0 kVAR= 175.0
+! New Load.S712c      Bus1=712.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S742a      Bus1=742.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=   8.0 kVAR=   4.0
+! New Load.S742b      Bus1=742.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S713c      Bus1=713.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S714a      Bus1=714.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  17.0 kVAR=   8.0
+! New Load.S714b      Bus1=714.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  21.0 kVAR=  10.0
+! New Load.S718a      Bus1=718.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S720c      Bus1=720.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S724b      Bus1=724.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S722b      Bus1=722.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 140.0 kVAR=  70.0
+! New Load.S722c      Bus1=722.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  21.0 kVAR=  10.0
+! New Load.S725b      Bus1=725.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S727c      Bus1=727.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S744a      Bus1=744.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S729a      Bus1=729.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S728a      Bus1=728.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 42.0 kVAR=  21.0
+! New Load.S728b      Bus1=728.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 42.0 kVAR=  21.0
+! New Load.S728c      Bus1=728.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 42.0 kVAR=  21.0
+! New Load.S730c      Bus1=730.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S731b      Bus1=731.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S732c      Bus1=732.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S733a      Bus1=733.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S734c      Bus1=734.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S737a      Bus1=737.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 140.0 kVAR=  70.0
+! New Load.S738a      Bus1=738.1.2 Phases=1 Conn=Delta Model=1 kV=  4.800 kW= 126.0 kVAR=  62.0
+! New Load.S741c      Bus1=741.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S740c      Bus1=740.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+! New Load.S736b      Bus1=736.2.3 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  42.0 kVAR=  21.0
+! New Load.S735c      Bus1=735.3.1 Phases=1 Conn=Delta Model=1 kV=  4.800 kW=  85.0 kVAR=  40.0
+
+
+! Set the single-phase load, modified by Heng Liang, 14/07/2021
+New Load.S701      Bus1=701 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW= 30.0 kVAR=  30.0
+New Load.S712      Bus1=712 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW= 30.0 kVAR=  30.0
+New Load.S742      Bus1=742 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=   30.0 kVAR= 30.0
+New Load.S713      Bus1=713 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S714      Bus1=714 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=   30.0
+New Load.S718      Bus1=718 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S720      Bus1=720 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S724      Bus1=724 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S722      Bus1=722 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S725      Bus1=725 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S727      Bus1=727 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S744      Bus1=744 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S729      Bus1=729 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S728      Bus1=728 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW= 30.0 kVAR=  30.0
+New Load.S730      Bus1=730 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S731      Bus1=731 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S732      Bus1=732 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S733      Bus1=733 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S734      Bus1=734 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S737      Bus1=737 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW= 30.0 kVAR=  30.0
+New Load.S738      Bus1=738 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW= 30.0 kVAR=  30.0
+New Load.S741      Bus1=741 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S740      Bus1=740 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S736      Bus1=736 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+New Load.S735      Bus1=735 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=  30.0 kVAR=  30.0
+! New Load.cap741    Bus1=741 Phases=1 Conn=Wye Model=1 kV=  4.800 Vminpu=0.60   kW=0.0    kVAR=-70.0
+
+
+Set VoltageBases = "8.313843876"
+CalcVoltageBases
+
+! solve mode=direct
+set maxiterations=100
+solve
+
+! show voltages LN Nodes
+! show currents residual=y elements
+! show powers kva elements
+! show taps
+! show y
+

@@ -1,0 +1,72 @@
+
+Elements in Active Circuit: ieee37
+
+Power Delivery Elements
+
+Element          Bus1     Bus2     Bus3     ...
+
+"Line.L1"        701       702       
+"Line.L2"        702       705       
+"Line.L3"        702       713       
+"Line.L4"        702       703       
+"Line.L5"        703       727       
+"Line.L6"        703       730       
+"Line.L7"        704       714       
+"Line.L8"        704       720       
+"Line.L9"        705       742       
+"Line.L10"       705       712       
+"Line.L11"       706       725       
+"Line.L12"       707       724       
+"Line.L13"       707       722       
+"Line.L14"       708       733       
+"Line.L15"       708       732       
+"Line.L16"       709       731       
+"Line.L17"       709       708       
+"Line.L18"       710       735       
+"Line.L19"       710       736       
+"Line.L20"       711       741       
+"Line.L21"       711       740       
+"Line.L22"       713       704       
+"Line.L23"       714       718       
+"Line.L24"       720       707       
+"Line.L25"       720       706       
+"Line.L26"       727       744       
+"Line.L27"       730       709       
+"Line.L28"       733       734       
+"Line.L29"       734       737       
+"Line.L30"       734       710       
+"Line.L31"       737       738       
+"Line.L32"       738       711       
+"Line.L33"       744       728       
+"Line.L34"       744       729       
+"Line.L35"       SOURCEBUS 701       
+
+Power Conversion Elements
+
+Element          Bus1     Bus2     Bus3     ...
+
+"Load.S701"      701       
+"Load.S712"      712       
+"Load.S742"      742       
+"Load.S713"      713       
+"Load.S714"      714       
+"Load.S718"      718       
+"Load.S720"      720       
+"Load.S724"      724       
+"Load.S722"      722       
+"Load.S725"      725       
+"Load.S727"      727       
+"Load.S744"      744       
+"Load.S729"      729       
+"Load.S728"      728       
+"Load.S730"      730       
+"Load.S731"      731       
+"Load.S732"      732       
+"Load.S733"      733       
+"Load.S734"      734       
+"Load.S737"      737       
+"Load.S738"      738       
+"Load.S741"      741       
+"Load.S740"      740       
+"Load.S736"      736       
+"Load.S735"      735       

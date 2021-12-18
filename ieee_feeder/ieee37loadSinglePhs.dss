@@ -1,0 +1,27 @@
+! Set the single-phase load, modified by Heng Liang, 14/07/2021
+
+New Load.S701      Bus1=701 Phases=1 Conn=Wye Model=1 kV=  4.800 kW= 210.0 kVAR=  105.0
+New Load.S712      Bus1=712 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S742      Bus1=742 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=   31.0 kVAR=   14.6
+New Load.S713      Bus1=713 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S714      Bus1=714 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  12.6 kVAR=   6.0
+New Load.S718      Bus1=718 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S720      Bus1=720 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S724      Bus1=724 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S722      Bus1=722 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  53.6 kVAR=  26.6
+New Load.S725      Bus1=725 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S727      Bus1=727 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S744      Bus1=744 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S729      Bus1=729 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S728      Bus1=728 Phases=1 Conn=Wye Model=1 kV=  4.800 kW= 42.0 kVAR=  21.0
+New Load.S730      Bus1=730 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S731      Bus1=731 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S732      Bus1=732 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S733      Bus1=733 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S734      Bus1=734 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S737      Bus1=737 Phases=1 Conn=Wye Model=1 kV=  4.800 kW= 46.6 kVAR=  23.3
+New Load.S738      Bus1=738 Phases=1 Conn=Wye Model=1 kV=  4.800 kW= 42.0 kVAR=  20.6
+New Load.S741      Bus1=741 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S740      Bus1=740 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
+New Load.S736      Bus1=736 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  14.0 kVAR=  7.0
+New Load.S735      Bus1=735 Phases=1 Conn=Wye Model=1 kV=  4.800 kW=  28.3 kVAR=  13.3
