@@ -8,7 +8,7 @@ The interaction of our agent with the power environment is showed as:
 
 The learning curve of TD3 algorithm and the cost function during training:
 
-<img width="400"  src=TD3_training_reward.png><img width="400"  src=TD3_training_cost.png>
+<img width="400"  src=reward_3.png><img width="400"  src=cost_3.png>
 
 Compared with traditional control methods, our RL control scheme achieves the voltages profiles as:
 
